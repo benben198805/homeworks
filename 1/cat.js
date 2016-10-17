@@ -1,10 +1,10 @@
 function Cat(name, color) {
-    Animal.call(this, name);
+    Animal.call(this, name, 'cat');
     this.color = color;
 }
 
 inherit(Cat, Animal);
 
-Cat.prototype.bar = function() {
-    console.log('maomao~~');
+Cat.prototype.miaow = function() {
+    output('maomao~~');
 }

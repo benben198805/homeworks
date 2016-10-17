@@ -1,16 +1,17 @@
-function Animal(name) {
+function Animal(name, type) {
     this.species = '动物';
     this.name = name;
+    this.type = type;
 }
 
 Animal.prototype.run = function() {
-    console.log('running');
+    output(this.type + ' ' + this.name + ' is running');
 }
 
 Animal.prototype.eat = function() {
-    console.log('eatting');
+    output(this.type + ' ' + this.name + ' is eatting');
 }
 
 Animal.prototype.who = function() {
-    console.log(this.name);
+    output('This animal\'s name is ' + this.name + '.');
 }
