@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>two column with same height: demo 2</title>
+    <style media="screen">
+        .main{
+            display: table;
+            width: 100%;
+        }
+        .row{
+            display: table-row;
+        }
+        .col{
+            display: table-cell;
+        }
+        .content{
+            /*float: left;*/
+            width: 60%;
+            background-color: red;
+        }
+
+        .sidebar{
+            /*float: left;*/
+            width: 38%;
+            margin-left: 2%;
+            background-color: #eee;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="row">
+            <div class="col content">
+                <section>
+                    <h1>Left part</h1>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col sidebar">
+                <aside>
+                    <h2>Right part</h2>
+                </aside>
+            </div>
+        </div>
+        <!-- /.containter -->
+    </div>
+    <!-- /.main -->
+</body>
+
+</html>
